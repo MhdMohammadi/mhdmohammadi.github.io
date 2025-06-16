@@ -133,3 +133,47 @@ h2 {
 span.highlight {
   background-color: #ffffd0;
 }
+
+/* Added polish for body text and spacing */
+body {
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.55;
+  color: #222;
+}
+
+/* Compact spacing for publication list */
+.paper-td {
+  padding: 10px;
+  vertical-align: top;
+  font-size: 14px;
+}
+
+/* Minimal horizontal line between papers */
+.paper-hr {
+  margin: 10px 0;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+.highlight-paper {
+  background: linear-gradient(135deg, #fff9e6, #fffdf5);
+  border-left: 4px solid #e0b100;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  margin-bottom: 10px;
+}
+
+/* Slight breathing room for sections */
+h2 {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+
+/* Optional: improve visual spacing on links and lists */
+ul {
+  margin-top: 0.2em;
+  margin-bottom: 0.8em;
+  padding-left: 1.2em;
+}
