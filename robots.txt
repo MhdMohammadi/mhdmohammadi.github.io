@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mhdmohammadi.github.io/SIDD-CC/sitemap.xml
