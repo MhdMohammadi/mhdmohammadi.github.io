@@ -56,6 +56,7 @@
         <td style="padding:00px;width:100%;vertical-align:middle">
           <h2>News</h2>
           <ul>
+            <li>July 2026: <strong>Why Low-Light Cameras Go Color Blind</strong> is accepted at <strong>ICCP 2026</strong> and recommended to a <strong>Special Issue of PAMI</strong>! 🎉</li>
             <li>October 2025: I am attending IROS 2025, presenting <strong>MORE</strong> and <strong>TESPEC</strong>! TESPEC is presented at ICCV as well. 🎉</li>
             <li>July 2025: Invited talk on event cameras at <a href="https://robotics.utoronto.ca/2025-toronto-robotics-conference/">the Toronto Robotics Conference.</a></li>
             <li>June 2025: <strong>MORE</strong> is accepted at <strong>IROS 2025</strong>! 🎉</li>
@@ -76,35 +77,38 @@
       <tr>
         <td style="padding:0px;">
           <div class="highlight-paper">
-            <a href="https://arxiv.org/pdf/2508.00913">
-              <span class="papertitle">TESPEC: Temporally-Enhanced Self-Supervised Pretraining for Event Cameras</span>
+            <a href="https://arxiv.org/abs/2607.11090">
+              <span class="papertitle">Why Low-Light Cameras Go Color Blind: Removing Color Bias in Raw Denoising</span>
             </a><br>
-            <strong>Mohammad Mohammadi</strong>, Ziyi Wu, Igor Gilitschenksi<br>
-            <em>ICCV</em>, 2025<br>
-            <a href="https://mhdmohammadi.github.io/TESPEC_webpage/">project page</a>, <a href="https://mhdmohammadi.github.io/TESPEC_webpage/">Project Page</a>, <a href="https://github.com/MhdMohammadi/tespec">Code and Checkpoints</a>
-            <p>We propose TESPEC, a self-supervised pretraining framework designed to capture long-term spatio-temporal information from event data. 
-              Unlike existing approaches that pretrain feedforward models on short event streams, TESPEC is tailored for recurrent models and leverages long event sequences. 
-              Using a masked image modeling strategy and a novel event accumulation method, TESPEC reconstructs pseudo-grayscale videos. 
-              Our model achieves state-of-the-art performance in downstream tasks such as object detection, semantic segmentation, and monocular depth estimation </p>
+            <strong>Mohammad Mohammadi</strong>, Sina Honari, Stavros Tsogkas, Tristan Aumentado-Armstrong, Michael S. Brown, Iqbal Mohomed, Konstantinos G. Derpanis, Alex Levinshtein, Igor Gilitschenski<br>
+            <em>ICCP</em>, 2026 (Recommended to Special Issue, PAMI)<br>
+            <a href="https://mhdmohammadi.github.io/SIDD-CC/">project page</a>, <a href="https://arxiv.org/abs/2607.11090">arXiv</a>, code (coming soon)
+            <p>We identify a systematic color shift in low-light raw denoising: the black level a camera reports in its metadata can be inaccurate, violating the zero-mean noise assumption behind raw denoisers and baking a color bias into their output. We model this black-level error and supervise its estimation with a two-pass network, erasing the bias and setting a new state of the art among blind raw denoising methods. We also trace a similar color shift in the SIDD ground truth and release SIDD-CC, a color-corrected version of the dataset.</p>
           </div>
         </td>
       </tr>
-      <tr>
-        <td style="padding:0px;">
-          <div class="highlight-paper">
-            <a href="https://arxiv.org/abs/2505.03035">
-              <span class="papertitle">MORE: Mobile Manipulation Rearrangement Through Grounded Language Reasoning</span>
-            </a><br>
-            <strong>Mohammad Mohammadi *</strong>, Daniel Honerkamp*, Martin Büchner*, Matteo Cassinelli*, Tim Welschehold, Fabien Despinoy, Igor Gilitschenski, Abhinav Valada<br>
-            <em>IROS</em>, 2025<br>
-            <a href="https://more-model.cs.uni-freiburg.de">project page</a>, code (coming soon)
-            <p>We tackle mobile manipulation rearrangement tasks from the Behavior-1k dataset, where a robot is required to solve
-              complex tasks requiring exploration, navigation, and manipulation in multi-room environments. The goal is to rearrange objects in a scene
-              based on natural language instructions. We introduce MORE, a novel framework that leverages a large language model
-              to reason about high-level planning, combined with low-level real-world subpolicies.</p>
-          </div>
-        </td>
-      </tr>
+      <tr><td><hr class="paper-hr"></td></tr>
+      <tr><td class="paper-td">
+        <a href="https://arxiv.org/pdf/2508.00913"><span class="papertitle">TESPEC: Temporally-Enhanced Self-Supervised Pretraining for Event Cameras</span></a><br>
+        <strong>Mohammad Mohammadi</strong>, Ziyi Wu, Igor Gilitschenksi<br>
+        <em>ICCV</em>, 2025<br>
+        <a href="https://mhdmohammadi.github.io/TESPEC_webpage/">project page</a>, <a href="https://github.com/MhdMohammadi/tespec">Code and Checkpoints</a>
+        <p>We propose TESPEC, a self-supervised pretraining framework designed to capture long-term spatio-temporal information from event data.
+          Unlike existing approaches that pretrain feedforward models on short event streams, TESPEC is tailored for recurrent models and leverages long event sequences.
+          Using a masked image modeling strategy and a novel event accumulation method, TESPEC reconstructs pseudo-grayscale videos.
+          Our model achieves state-of-the-art performance in downstream tasks such as object detection, semantic segmentation, and monocular depth estimation </p>
+      </td></tr>
+      <tr><td><hr class="paper-hr"></td></tr>
+      <tr><td class="paper-td">
+        <a href="https://arxiv.org/abs/2505.03035"><span class="papertitle">MORE: Mobile Manipulation Rearrangement Through Grounded Language Reasoning</span></a><br>
+        <strong>Mohammad Mohammadi *</strong>, Daniel Honerkamp*, Martin Büchner*, Matteo Cassinelli*, Tim Welschehold, Fabien Despinoy, Igor Gilitschenski, Abhinav Valada<br>
+        <em>IROS</em>, 2025<br>
+        <a href="https://more-model.cs.uni-freiburg.de">project page</a>, code (coming soon)
+        <p>We tackle mobile manipulation rearrangement tasks from the Behavior-1k dataset, where a robot is required to solve
+          complex tasks requiring exploration, navigation, and manipulation in multi-room environments. The goal is to rearrange objects in a scene
+          based on natural language instructions. We introduce MORE, a novel framework that leverages a large language model
+          to reason about high-level planning, combined with low-level real-world subpolicies.</p>
+      </td></tr>
       <tr><td><hr class="paper-hr"></td></tr>
       <tr><td class="paper-td">
         <a href="https://arxiv.org/abs/2302.13851"><span class="papertitle">Implicit Poisoning Attacks in Two-Agent Reinforcement Learning...</span></a><br>
